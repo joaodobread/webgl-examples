@@ -169,7 +169,8 @@ const generateCube = async (canvasHolder: Element): Promise<HTMLCanvasElement> =
   //
   // CREATE TEXTURE
   //
-  const imageTexture = document.getElementById("crate-image") as HTMLVideoElement
+  const textureArray = ["crate-image-1", "crate-image-2", "crate-image-2", "crate-image-4", "crate-image-5"]
+  const imageTexture = document.getElementById(textureArray[Math.floor(Math.random() * textureArray.length)]) as HTMLVideoElement
   if (!imageTexture) return canvas
   const boxTexture = gl.createTexture()
   gl.bindTexture(gl.TEXTURE_2D, boxTexture)
