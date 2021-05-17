@@ -25,6 +25,6 @@ or
 
 ## Third Step - Serve the App
 
-> yarn serve
+> yarn serve:dev
 
-> npm run serve
+> npm run serve:dev
