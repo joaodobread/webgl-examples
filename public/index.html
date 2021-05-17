@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a class="nav-link" href="/triangle" aria-current="page">Triangle</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/rotating-triangle-automatic" aria-current="page">Rotating Triangle</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/rotating-triangle" aria-current="page">Rotating Triangle With Axis</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cube" aria-current="page">3D Cube</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/cube-textured" tabindex="-1" aria-disabled="true">3D Cube Textured</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#tutorial" tabindex="-1" aria-disabled="true">Tutorial</a>
+    </li>
+  </ul>
+
+  <div class="container mt-5">
+    <section id="tutorial">
+      Para utilizar do WebGL no navegador você não precisa de nada além do navegador. O WebGL já vem dentro do contexto
+      do
+      canvas, se o seu navegador suportar o HTML:5 então provavelmente terá suporte para o WebGL
+    </section>
+  </div>
+  <section>
+    <div class="container mt-5">
+      Exemplo de um cubo 3d utilizando WebGL.
+    </div>
+    <div id="triangle-content"></div>
+  </section>
+  <div class="container mt-5">
+
+    <div class="mt-3">
+      Você pode acessar o site do <a href="https://webglfundamentals.org">WebGL Fundamental clicando aqui.</a>
+    </div>
+
+    <section>
+      <ul>
+        <li>O que é o WebGL:</li>
+      </ul>
+      <span>WebGL é basicamente uma API de rasterização e não uma API 3D.</span>
+      <p>
+        O WebGL é chamado de API de rasterização basicamente pela quantidade de matemática 3D que você precisa saber
+        para que utilize-a;
+        <br />
+      </p>
+      <p>
+        Basicamente a api WebGL não cria gráficos em 3D e não se encaixa como uma biblioteca 3D.
+        Diferentemente de outras bibliotecas como ThreeJs o WebGL você precisa entender de matrizes, coordenadas
+        normalizadas, frustums, produtos cruzados, produtos escalares, interpolação variável e cálculos especulares de
+        iluminação e todo os tipos de outras coisas que geralmente levam anos para serem adquiridos.
+      </p>
+    </section>
+
+    <section id="canvas-webgl">
+      Em relação ao canvas o WebGL não tem grandes diferenças, principalmente a nível de codificação. O código dos dois
+      não tem tamanhos tão diferentes, mas a diferença mais clara é que o canvas faz um loop sobre os vértices
+      fornecidos, já o WebGL faz o mesmo, só que a matemática fornecida está em GLSL e é diretamente executada pela GPU;
+    </section>
+
+  </div>
+  <a href="/triangle">Triangle</a>
+  <script src="../dist/bundle.js"></script>
+</body>
+
+</html>

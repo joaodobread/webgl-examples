@@ -1,0 +1,23 @@
+{
+  "name": "cg-webgl-tsc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^15.3.0",
+    "typescript": "^4.2.4",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.3.0",
+    "serve": "^11.3.2",
+    "ts-loader": "^9.1.2",
+    "webpack": "^5.37.0"
+  },
+  "scripts": {
+    "build": "npx webpack",
+    "build:watch": "npx webpack --watch",
+    "serve:dev": "npx serve",
+    "serve:prod": "npx serve -l 80 -c serve.json public"
+  }
+}

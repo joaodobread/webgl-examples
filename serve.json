@@ -1,0 +1,25 @@
+{
+  "public": "./public",
+  "rewrites": [
+    {
+      "source": "/triangle",
+      "destination": "views/triangle.html"
+    },
+    {
+      "source": "/rotating-triangle-automatic",
+      "destination": "views/rotating-triangle-automatic.html"
+    },
+    {
+      "source": "/rotating-triangle",
+      "destination": "views/rotating-triangle.html"
+    },
+    {
+      "source": "/cube",
+      "destination": "views/cube.html"
+    },
+    {
+      "source": "/cube-textured",
+      "destination": "views/cube-textured.html"
+    }
+  ]
+}
